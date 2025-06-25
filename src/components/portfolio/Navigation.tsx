@@ -1,9 +1,19 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navItems = [
     { href: "#home", label: "Home" },
@@ -14,25 +24,56 @@ const Navigation = () => {
     { href: "#contact", label: "Contact" }
   ];
 
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false);
+    }
+  };
+
   return (
-    <nav className="fixed top-0 w-full bg-cream/80 dark:bg-midnight/80 backdrop-blur-md z-50 border-b border-gold/20">
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+    }`}>
       <div className="section-padding py-4">
         <div className="flex justify-between items-center">
-          <div className="font-playfair font-bold text-2xl text-midnight dark:text-cream">
-            AM
+          <div className="font-bold text-2xl">
+            <span className={`transition-colors duration-300 ${
+              scrolled ? 'text-black' : 'text-white'
+            }`}>
+              &lt;
+            </span>
+            <span className="text-orange">Dev</span>
+            <span className={`transition-colors duration-300 ${
+              scrolled ? 'text-black' : 'text-white'
+            }`}>
+              /&gt;
+            </span>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <a
+              <button
                 key={item.label}
-                href={item.href}
-                className="text-midnight dark:text-cream hover:text-gold transition-colors duration-300"
+                onClick={() => scrollToSection(item.href)}
+                className={`font-medium transition-all duration-300 hover:text-orange hover:scale-105 ${
+                  scrolled ? 'text-black' : 'text-white'
+                }`}
               >
                 {item.label}
-              </a>
+              </button>
             ))}
+          </div>
+
+          <div className="hidden md:block">
+            <Button 
+              className="btn-primary"
+              onClick={() => scrollToSection('#contact')}
+            >
+              Let's Talk
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -42,28 +83,33 @@ const Navigation = () => {
             className="md:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <div className="w-6 h-6 flex flex-col justify-center items-center">
-              <div className={`w-5 h-0.5 bg-midnight dark:bg-cream transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-1' : ''}`} />
-              <div className={`w-5 h-0.5 bg-midnight dark:bg-cream transition-all duration-300 mt-1 ${isOpen ? 'opacity-0' : ''}`} />
-              <div className={`w-5 h-0.5 bg-midnight dark:bg-cream transition-all duration-300 mt-1 ${isOpen ? '-rotate-45 -translate-y-1' : ''}`} />
-            </div>
+            {isOpen ? (
+              <X className={`w-6 h-6 ${scrolled ? 'text-black' : 'text-white'}`} />
+            ) : (
+              <Menu className={`w-6 h-6 ${scrolled ? 'text-black' : 'text-white'}`} />
+            )}
           </Button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gold/20">
-            <div className="flex flex-col space-y-3 pt-4">
+          <div className="md:hidden mt-4 pb-4 border-t border-orange/20 bg-white/95 backdrop-blur-md rounded-lg">
+            <div className="flex flex-col space-y-4 pt-4 px-4">
               {navItems.map((item) => (
-                <a
+                <button
                   key={item.label}
-                  href={item.href}
-                  className="text-midnight dark:text-cream hover:text-gold transition-colors duration-300"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => scrollToSection(item.href)}
+                  className="text-black hover:text-orange transition-colors duration-300 text-left font-medium"
                 >
                   {item.label}
-                </a>
+                </button>
               ))}
+              <Button 
+                className="btn-primary mt-4"
+                onClick={() => scrollToSection('#contact')}
+              >
+                Let's Talk
+              </Button>
             </div>
           </div>
         )}

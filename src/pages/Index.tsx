@@ -18,11 +18,9 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-cream dark:bg-midnight">
+    <div className="min-h-screen bg-white font-josefin">
       <Navigation />
-      <div style={{ transform: `translateY(${scrollY * 0.5}px)` }}>
-        <Hero />
-      </div>
+      <Hero />
       <About />
       <Projects />
       <Skills />

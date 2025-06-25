@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Mail, Linkedin, Youtube } from "lucide-react";
+import { Mail, Linkedin, Github, Send, MessageCircle, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -20,8 +20,8 @@ const Contact = () => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. I'll get back to you soon!",
+      title: "Message Sent Successfully!",
+      description: "Thank you for reaching out. I'll get back to you within 24 hours!",
     });
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
@@ -34,44 +34,49 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-midnight via-midnight-light to-midnight">
+    <section id="contact" className="py-32 bg-white">
       <div className="section-padding">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-playfair font-bold text-4xl md:text-5xl text-cream mb-4">
-              Let's Work Together
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="font-bold text-5xl md:text-6xl text-black mb-6">
+              Let's Create Something Amazing
             </h2>
-            <div className="w-24 h-1 bg-gold mx-auto mb-4"></div>
-            <p className="text-lg text-cream/70 max-w-2xl mx-auto">
-              Ready to bring your ideas to life? Let's discuss your next project and create something amazing together.
+            <div className="w-24 h-1 bg-orange mx-auto mb-8"></div>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Ready to bring your vision to life? Let's discuss your project and make it happen.
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <Card className="bg-cream/10 border-gold/20 backdrop-blur-sm">
+            <Card className="bg-white shadow-2xl border-0 animate-slide-in-left">
               <CardHeader>
-                <CardTitle className="font-playfair text-2xl text-cream">
+                <CardTitle className="font-bold text-3xl text-black flex items-center">
+                  <MessageCircle className="w-8 h-8 text-orange mr-3" />
                   Send a Message
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="p-8">
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <Label htmlFor="name" className="text-cream/90">Name</Label>
+                      <Label htmlFor="name" className="text-black font-medium text-lg mb-2 block">
+                        Your Name
+                      </Label>
                       <Input
                         id="name"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="bg-cream/10 border-gold/30 text-cream placeholder:text-cream/50"
-                        placeholder="Your name"
+                        className="h-12 border-2 border-gray-200 focus:border-orange text-black text-lg"
+                        placeholder="John Doe"
                       />
                     </div>
                     <div>
-                      <Label htmlFor="email" className="text-cream/90">Email</Label>
+                      <Label htmlFor="email" className="text-black font-medium text-lg mb-2 block">
+                        Email Address
+                      </Label>
                       <Input
                         id="email"
                         name="email"
@@ -79,108 +84,128 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="bg-cream/10 border-gold/30 text-cream placeholder:text-cream/50"
-                        placeholder="your.email@example.com"
+                        className="h-12 border-2 border-gray-200 focus:border-orange text-black text-lg"
+                        placeholder="john@example.com"
                       />
                     </div>
                   </div>
                   
                   <div>
-                    <Label htmlFor="subject" className="text-cream/90">Subject</Label>
+                    <Label htmlFor="subject" className="text-black font-medium text-lg mb-2 block">
+                      Project Subject
+                    </Label>
                     <Input
                       id="subject"
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="bg-cream/10 border-gold/30 text-cream placeholder:text-cream/50"
-                      placeholder="Project inquiry"
+                      className="h-12 border-2 border-gray-200 focus:border-orange text-black text-lg"
+                      placeholder="Website Development Project"
                     />
                   </div>
                   
                   <div>
-                    <Label htmlFor="message" className="text-cream/90">Message</Label>
+                    <Label htmlFor="message" className="text-black font-medium text-lg mb-2 block">
+                      Project Details
+                    </Label>
                     <textarea
                       id="message"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      rows={5}
-                      className="w-full px-3 py-2 bg-cream/10 border border-gold/30 rounded-md text-cream placeholder:text-cream/50 focus:outline-none focus:ring-2 focus:ring-gold"
-                      placeholder="Tell me about your project..."
+                      rows={6}
+                      className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg text-black text-lg focus:outline-none focus:border-orange resize-none"
+                      placeholder="Tell me about your project, goals, timeline, and any specific requirements..."
                     />
                   </div>
                   
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-gold hover:bg-gold/90 text-midnight font-semibold"
+                    className="w-full btn-primary text-xl py-6 flex items-center justify-center"
                   >
-                    Send Message
+                    <Send className="w-6 h-6 mr-3" />
+                    Start a Project
                   </Button>
                 </form>
               </CardContent>
             </Card>
             
-            {/* Contact Info */}
-            <div className="space-y-8">
-              <Card className="bg-cream/10 border-gold/20 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <h3 className="font-playfair text-xl text-cream mb-4">Get In Touch</h3>
-                  <p className="text-cream/80 leading-relaxed mb-6">
+            {/* Contact Info & Social */}
+            <div className="space-y-8 animate-slide-in-right">
+              {/* Contact Details */}
+              <Card className="bg-gray-50 shadow-xl border-0">
+                <CardContent className="p-8">
+                  <h3 className="font-bold text-2xl text-black mb-6 flex items-center">
+                    <Phone className="w-6 h-6 text-orange mr-3" />
+                    Get In Touch
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed mb-8 text-lg">
                     I'm always excited to work on new projects and collaborate with amazing people. 
-                    Whether you have a project in mind or just want to say hello, feel free to reach out!
+                    Whether you need a responsive website, scalable backend, or creative 3D animations, 
+                    let's bring your ideas to life!
                   </p>
                   
                   <div className="space-y-4">
-                    <div className="flex items-center space-x-3">
-                      <Mail className="w-5 h-5 text-gold" />
-                      <span className="text-cream/90">alex.morgan@email.com</span>
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-orange/10 rounded-full flex items-center justify-center">
+                        <Mail className="w-6 h-6 text-orange" />
+                      </div>
+                      <div>
+                        <p className="text-black font-medium">Email</p>
+                        <p className="text-gray-600">your.email@example.com</p>
+                      </div>
                     </div>
                   </div>
                 </CardContent>
               </Card>
               
               {/* Social Links */}
-              <Card className="bg-cream/10 border-gold/20 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <h3 className="font-playfair text-xl text-cream mb-4">Follow Me</h3>
+              <Card className="bg-black shadow-xl border-0">
+                <CardContent className="p-8">
+                  <h3 className="font-bold text-2xl text-white mb-6">
+                    Connect With Me
+                  </h3>
                   <div className="flex space-x-4">
                     <Button
                       variant="outline"
                       size="icon"
-                      className="border-gold/30 text-gold hover:bg-gold hover:text-midnight"
+                      className="w-14 h-14 border-2 border-orange text-orange hover:bg-orange hover:text-white transition-all duration-300"
                     >
-                      <Linkedin className="w-5 h-5" />
+                      <Linkedin className="w-7 h-7" />
                     </Button>
                     <Button
                       variant="outline"
                       size="icon"
-                      className="border-gold/30 text-gold hover:bg-gold hover:text-midnight"
+                      className="w-14 h-14 border-2 border-orange text-orange hover:bg-orange hover:text-white transition-all duration-300"
                     >
-                      <Youtube className="w-5 h-5" />
+                      <Github className="w-7 h-7" />
                     </Button>
                     <Button
                       variant="outline"
                       size="icon"
-                      className="border-gold/30 text-gold hover:bg-gold hover:text-midnight"
+                      className="w-14 h-14 border-2 border-orange text-orange hover:bg-orange hover:text-white transition-all duration-300"
                     >
-                      <Mail className="w-5 h-5" />
+                      <Mail className="w-7 h-7" />
                     </Button>
                   </div>
                 </CardContent>
               </Card>
               
-              {/* Resume Download */}
-              <Card className="bg-gold/20 border-gold/40 backdrop-blur-sm">
-                <CardContent className="p-6 text-center">
-                  <h3 className="font-playfair text-xl text-cream mb-4">Download Resume</h3>
+              {/* CTA Card */}
+              <Card className="bg-gradient-to-br from-orange to-orange-dark shadow-xl border-0 text-white">
+                <CardContent className="p-8 text-center">
+                  <h3 className="font-bold text-2xl mb-4">Ready to Start?</h3>
+                  <p className="mb-6 text-lg">
+                    Download my resume to learn more about my experience and skills.
+                  </p>
                   <Button
                     size="lg"
-                    className="bg-gold hover:bg-gold/90 text-midnight font-semibold"
+                    className="bg-white text-orange hover:bg-gray-100 font-bold text-lg px-8 py-3"
                   >
-                    Download PDF
+                    Download Resume
                   </Button>
                 </CardContent>
               </Card>
@@ -190,11 +215,11 @@ const Contact = () => {
       </div>
       
       {/* Footer */}
-      <div className="border-t border-gold/20 mt-16 pt-8">
+      <div className="border-t border-gray-200 mt-20 pt-12">
         <div className="section-padding">
           <div className="text-center">
-            <p className="text-cream/60">
-              © 2024 Alex Morgan. Built with React, TypeScript, and lots of ☕
+            <p className="text-gray-600 text-lg">
+              © 2024 Your Name. Crafted with creativity, built with passion. ⚡
             </p>
           </div>
         </div>
