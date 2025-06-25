@@ -111,7 +111,7 @@
   }
 
   .btn-primary {
-    @apply bg-orange hover:bg-orange-dark text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg;
+    @apply bg-gradient-to-r from-blue-accolade to-blue-aerial hover:from-blue-accolade-dark hover:to-blue-aerial-dark text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg;
   }
 
   .btn-secondary {

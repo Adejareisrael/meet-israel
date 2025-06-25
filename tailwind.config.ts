@@ -72,6 +72,14 @@ export default {
 					DEFAULT: '#FF6B35',
 					light: '#FF8A5C',
 					dark: '#E55A2B'
+				},
+				'blue-accolade': {
+					DEFAULT: '#4A90E2',
+					dark: '#357ABD'
+				},
+				'blue-aerial': {
+					DEFAULT: '#7BB3F0',
+					dark: '#5A9BE8'
 				}
 			},
 			borderRadius: {
