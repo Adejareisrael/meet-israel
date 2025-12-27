@@ -10,35 +10,27 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Chen",
-      role: "Creative Director at InnovateCo",
+      name: "WitExpress",
+      role: "Creatives Agency",
       content: "Working with this developer was exceptional. They delivered a stunning WordPress site with custom 3D animations that perfectly captured our brand vision. The attention to detail and technical execution exceeded all expectations.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=100&h=100"
     },
     {
       id: 2,
-      name: "Marcus Rodriguez",
-      role: "Startup Founder",
+      name: "Louis Macjob",
+      role: "CEO Louis Ventures",
       content: "The Node.js API they built for our platform is incredibly robust and scalable. Not only did they deliver clean, efficient code, but they also provided excellent documentation and ongoing support.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1581091534298-04dcbce3278c?auto=format&fit=crop&w=100&h=100"
     },
     {
       id: 3,
-      name: "Emily Watson",
-      role: "E-commerce Manager",
+      name: "Gbenga Adeyemi",
+      role: "MemeFactory",
       content: "They transformed our Wix store into a conversion machine. The custom integrations and responsive design have significantly improved our user experience and sales. Truly professional work!",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=100&h=100"
-    },
-    {
-      id: 4,
-      name: "David Park",
-      role: "Tech Lead at StartupXYZ",
-      content: "Their blend of technical skills and creative vision is rare. The 3D animations they created in Blender brought our product demos to life, and the backend integration was flawless.",
-      rating: 5,
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100"
     }
   ];
 
