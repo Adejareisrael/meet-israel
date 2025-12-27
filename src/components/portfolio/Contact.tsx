@@ -219,7 +219,7 @@ const Contact = () => {
         <div className="section-padding">
           <div className="text-center">
             <p className="text-gray-600 text-lg">
-              © 2024 Your Name. Crafted with creativity, built with passion. ⚡
+              © 2024 Olaosebikan Israel. Crafted with creativity, built with passion. ⚡
             </p>
           </div>
         </div>
