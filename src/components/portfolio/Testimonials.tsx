@@ -19,7 +19,7 @@ const Testimonials = () => {
     {
       id: 2,
       name: "Louis Macjob",
-      role: "CEO Louis Ventures",
+      role: "Louis Ventures",
       content: "The Node.js API they built for our platform is incredibly robust and scalable. Not only did they deliver clean, efficient code, but they also provided excellent documentation and ongoing support.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1581091534298-04dcbce3278c?auto=format&fit=crop&w=100&h=100"
@@ -28,7 +28,7 @@ const Testimonials = () => {
       id: 3,
       name: "Gbenga Adeyemi",
       role: "MemeFactory",
-      content: "They transformed our Wix store into a conversion machine. The custom integrations and responsive design have significantly improved our user experience and sales. Truly professional work!",
+      content: "They built the entire backend infrastructure for my startup, including robust authentication systems and security protocols. Their technical expertise transformed our vision into a secure, scalable platform ready for growth.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=100&h=100"
     }
