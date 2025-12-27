@@ -42,7 +42,6 @@ const Hero = () => {
               Let's Work Together
             </Button>
             <Button 
-              variant="outline" 
               size="lg"
               className="btn-secondary text-xl px-12 py-6"
             >
