@@ -15,7 +15,7 @@ const Projects = () => {
       title: "Personalized Content Recommendation Engine",
       description: "AI-powered recommendation system that delivers personalized content based on user behavior and preferences",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&h=400",
-      technologies: ["Python", "Machine Learning", "Node.js", "REST API"],
+      technologies: ["Machine Learning", "Node.js", "REST API"],
       details: "Developed an intelligent content recommendation engine using machine learning algorithms to analyze user behavior and preferences. Features include collaborative filtering, content-based filtering, real-time recommendations, and A/B testing capabilities for optimization.",
       liveUrl: "#",
       githubUrl: "https://github.com/Marvis111/rcfbackend"
