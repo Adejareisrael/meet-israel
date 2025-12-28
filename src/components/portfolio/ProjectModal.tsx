@@ -73,11 +73,18 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
           </div>
           
           <div className="flex gap-4 pt-6 border-t border-gray-100">
-            <Button className="btn-primary flex items-center">
+            <Button 
+              className="btn-primary flex items-center"
+              onClick={() => window.open(project.liveUrl, '_blank')}
+            >
               <ExternalLink className="w-5 h-5 mr-2" />
               View Live Site
             </Button>
-            <Button variant="outline" className="btn-secondary flex items-center">
+            <Button 
+              variant="outline" 
+              className="btn-secondary flex items-center"
+              onClick={() => window.open(project.githubUrl, '_blank')}
+            >
               <Github className="w-5 h-5 mr-2" />
               View Source Code
             </Button>

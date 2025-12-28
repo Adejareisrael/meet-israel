@@ -27,7 +27,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&h=400",
       technologies: ["Wix", "Blender", "Custom Animations", "UI/UX"],
       details: "Designed and developed a stunning creative agency website using Wix with custom 3D animations created in Blender. Features include smooth scroll animations, interactive project showcases, and optimized performance across all devices.",
-      liveUrl: "#",
+      liveUrl: "https://witexpress.co/",
       githubUrl: "#"
     },
     {
@@ -120,6 +120,10 @@ const Projects = () => {
                     <Button
                       size="sm"
                       className="bg-orange hover:bg-orange-dark text-white"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open(project.liveUrl, '_blank');
+                      }}
                     >
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Live Site
