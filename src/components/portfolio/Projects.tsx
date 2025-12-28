@@ -117,24 +117,30 @@ const Projects = () => {
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center space-x-4">
-                    <Button
-                      size="sm"
-                      className="bg-orange hover:bg-orange-dark text-white"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        window.open(project.liveUrl, '_blank');
-                      }}
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Site
-                    </Button>
+                    {project.liveUrl !== "#" ? (
+                      <Button
+                        size="sm"
+                        className="bg-orange hover:bg-orange-dark text-white"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          window.open(project.liveUrl, '_blank');
+                        }}
+                      >
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Live Site
+                      </Button>
+                    ) : null}
                     <Button
                       variant="outline"
                       size="sm"
                       className="border-white text-white hover:bg-white hover:text-black"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open(project.githubUrl, '_blank');
+                      }}
                     >
                       <Github className="w-4 h-4 mr-2" />
-                      Code
+                      {project.liveUrl === "#" ? "View Source Code" : "Code"}
                     </Button>
                   </div>
                 </div>
