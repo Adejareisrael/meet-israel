@@ -13,10 +13,10 @@ const Projects = () => {
     {
       id: 1,
       title: "Personalized Content Recommendation Engine",
-      description: "AI-powered recommendation system that delivers personalized content based on user behavior and preferences",
+      description: "User engagement platform focused on personalized book recommendations and growth tracking",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&h=400",
       technologies: ["Machine Learning", "Node.js", "REST API"],
-      details: "Developed an intelligent content recommendation engine using machine learning algorithms to analyze user behavior and preferences. Features include collaborative filtering, content-based filtering, real-time recommendations, and A/B testing capabilities for optimization.",
+      details: "Collaborated with a development team to build a user engagement platform focused on personalized book recommendations and growth tracking. Engineered the backend infrastructure to ingest and manage user data, implementing algorithmic logic to tailor content suggestions to individual user profiles. Designed scalable REST APIs and data models to support future content expansion and detailed user reporting. Translated high-level organizational goals into functional technical requirements, ensuring the final build met stakeholder expectations.",
       liveUrl: "#",
       githubUrl: "https://github.com/Marvis111/rcfbackend"
     },
