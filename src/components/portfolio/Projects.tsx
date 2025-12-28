@@ -117,7 +117,7 @@ const Projects = () => {
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center space-x-4">
-                    {project.liveUrl !== "#" ? (
+                    {project.title !== "Product CRUD API" && (
                       <Button
                         size="sm"
                         className="bg-orange hover:bg-orange-dark text-white"
@@ -129,7 +129,7 @@ const Projects = () => {
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Live Site
                       </Button>
-                    ) : null}
+                    )}
                     <Button
                       variant="outline"
                       size="sm"
@@ -140,7 +140,7 @@ const Projects = () => {
                       }}
                     >
                       <Github className="w-4 h-4 mr-2" />
-                      {project.liveUrl === "#" ? "View Source Code" : "Code"}
+                      {project.title === "Product CRUD API" ? "View Source Code" : "Code"}
                     </Button>
                   </div>
                 </div>
