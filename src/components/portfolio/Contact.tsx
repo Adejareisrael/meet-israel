@@ -201,12 +201,14 @@ const Contact = () => {
                   <p className="mb-6 text-lg">
                     Download my resume to learn more about my experience and skills.
                   </p>
-                  <Button
-                    size="lg"
-                    className="bg-white text-orange hover:bg-gray-100 font-bold text-lg px-8 py-3"
-                  >
-                    Download Resume
-                  </Button>
+                  <a href="/My_resume.pdf" download>
+                    <Button
+                      size="lg"
+                      className="bg-white text-orange hover:bg-gray-100 font-bold text-lg px-8 py-3"
+                    >
+                      Download Resume
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             </div>
