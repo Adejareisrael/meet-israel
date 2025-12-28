@@ -12,11 +12,11 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with Node.js backend and responsive frontend",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&h=400",
-      technologies: ["WordPress", "Node.js", "API Integration", "Responsive Design"],
-      details: "Built a comprehensive e-commerce platform featuring custom WordPress development, Node.js backend API, payment gateway integration, and mobile-responsive design. Implemented advanced product filtering, user authentication, and order management systems.",
+      title: "Personalized Content Recommendation Engine",
+      description: "AI-powered recommendation system that delivers personalized content based on user behavior and preferences",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&h=400",
+      technologies: ["Python", "Machine Learning", "Node.js", "REST API"],
+      details: "Developed an intelligent content recommendation engine using machine learning algorithms to analyze user behavior and preferences. Features include collaborative filtering, content-based filtering, real-time recommendations, and A/B testing capabilities for optimization.",
       liveUrl: "#",
       githubUrl: "#"
     },
