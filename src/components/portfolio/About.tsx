@@ -55,8 +55,8 @@ const About = () => {
               <div className="relative">
                 <div className="w-96 h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-orange">
                   <img
-                    src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=400&h=400"
-                    alt="Developer Portrait"
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&h=400"
+                    alt="Developer Workspace"
                     className="w-full h-full object-cover"
                   />
                 </div>
