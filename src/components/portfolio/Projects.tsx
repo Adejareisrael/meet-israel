@@ -38,7 +38,7 @@ const Projects = () => {
       technologies: ["Node.js", "Express", "MongoDB", "REST API"],
       details: "Built a robust RESTful API for complete product management, featuring Create, Read, Update, and Delete operations. Includes authentication, input validation, error handling, pagination, and comprehensive API documentation with Swagger.",
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/Adejareisrael/simple-API"
     },
     {
       id: 4,
