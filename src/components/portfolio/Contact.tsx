@@ -158,6 +158,20 @@ const Contact = () => {
                         <p className="text-gray-600">theizzylogic@gmail.com</p>
                       </div>
                     </div>
+                    <a 
+                      href="https://wa.me/2348161396891" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-4 hover:bg-orange/5 rounded-lg p-2 -ml-2 transition-colors"
+                    >
+                      <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center">
+                        <MessageCircle className="w-6 h-6 text-green-500" />
+                      </div>
+                      <div>
+                        <p className="text-black font-medium">WhatsApp</p>
+                        <p className="text-gray-600">08161396891</p>
+                      </div>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
