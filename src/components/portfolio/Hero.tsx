@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="animate-fade-in">
             <div className="flex justify-center items-center mb-6">
               <Code className="w-8 h-8 text-orange mr-3" />
-              <span className="text-orange font-semibold text-lg">Web Developer & Backend Specialist</span>
+              <span className="text-orange font-semibold text-lg">Software Engineer & Backend Specialist</span>
               <Zap className="w-8 h-8 text-orange ml-3" />
             </div>
             
