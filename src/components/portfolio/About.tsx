@@ -29,7 +29,7 @@ const About = () => {
               <Card className="bg-white shadow-2xl border-0 hover-scale">
                 <CardContent className="p-12">
                   <p className="text-xl text-gray-700 leading-relaxed mb-8 font-light">
-                    I'm a <span className="font-semibold text-orange">Web Developer</span> skilled in building responsive and functional websites using 
+                    I'm a <span className="font-semibold text-orange">Software Engineer</span> skilled in building responsive and functional websites using
                     <span className="font-semibold"> WordPress and Wix</span>. As a <span className="font-semibold text-orange">backend developer</span>, 
                     I specialize in <span className="font-semibold">Node.js</span> to build scalable and efficient APIs.
                   </p>
