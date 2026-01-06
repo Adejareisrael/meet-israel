@@ -4,10 +4,10 @@ import { Code2, Server, Palette, Globe } from "lucide-react";
 
 const About = () => {
   const highlights = [
-    { icon: Code2, text: "Responsive Web Development" },
-    { icon: Server, text: "Backend API Development" },
+    { icon: Code2, text: "Full-Stack Development" },
+    { icon: Server, text: "Backend & API Architecture" },
     { icon: Palette, text: "3D Animation & Design" },
-    { icon: Globe, text: "UI/UX Design" }
+    { icon: Globe, text: "Scalable System Design" }
   ];
 
   return (
@@ -20,7 +20,7 @@ const About = () => {
             </h2>
             <div className="w-24 h-1 bg-orange mx-auto mb-8"></div>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Passionate developer with a creative edge
+              Passionate engineer building scalable solutions
             </p>
           </div>
           
@@ -29,14 +29,14 @@ const About = () => {
               <Card className="bg-white shadow-2xl border-0 hover-scale">
                 <CardContent className="p-12">
                   <p className="text-xl text-gray-700 leading-relaxed mb-8 font-light">
-                    I'm a <span className="font-semibold text-orange">Software Engineer</span> skilled in building responsive and functional websites using
-                    <span className="font-semibold"> WordPress and Wix</span>. As a <span className="font-semibold text-orange">backend developer</span>, 
-                    I specialize in <span className="font-semibold">Node.js</span> to build scalable and efficient APIs.
+                    I'm a <span className="font-semibold text-orange">Software Engineer</span> passionate about building robust, scalable systems and 
+                    crafting clean, maintainable code. I specialize in <span className="font-semibold text-orange">backend development</span> with 
+                    <span className="font-semibold"> Node.js</span>, designing efficient APIs and architecting solutions that grow with business needs.
                   </p>
                   <p className="text-xl text-gray-700 leading-relaxed mb-10 font-light">
-                    I'm also proficient in creating <span className="font-semibold text-orange">3D animations with Blender</span>, 
-                    fluent in English, and have a growing interest in <span className="font-semibold">UI/UX design</span>. 
-                    I believe in crafting digital experiences that are both beautiful and functional.
+                    Beyond engineering, I bring creativity through <span className="font-semibold text-orange">3D animations with Blender</span> and 
+                    have a keen eye for <span className="font-semibold">user experience</span>. 
+                    I believe great software balances technical excellence with intuitive design.
                   </p>
                   
                   <div className="grid grid-cols-2 gap-4">
