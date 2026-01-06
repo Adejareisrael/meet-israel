@@ -24,8 +24,8 @@ const Hero = () => {
             </h1>
             
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-light text-black mb-8 leading-relaxed">
-              I Build Web Experiences <br />
-              <span className="font-semibold text-orange">That Work</span>
+              I Build Software Solutions <br />
+              <span className="font-semibold text-orange">That Scale</span>
             </h2>
             
             <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
