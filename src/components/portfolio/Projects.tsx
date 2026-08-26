@@ -62,6 +62,16 @@ const Projects = () => {
     },
     {
       id: 6,
+      title: "Product CRUD API",
+      description: "RESTful API for product management with full CRUD operations",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&h=400",
+      technologies: ["Node.js", "Express", "MongoDB", "REST API"],
+      details: "Built a robust RESTful API for complete product management, featuring Create, Read, Update, and Delete operations. Includes authentication, input validation, error handling, pagination, and comprehensive API documentation with Swagger.",
+      liveUrl: "#",
+      githubUrl: "https://github.com/Adejareisrael/simple-API"
+    },
+    {
+      id: 7,
       title: "Interactive Portfolio",
       description: "Creative portfolio with 3D elements and smooth animations",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&h=400",
