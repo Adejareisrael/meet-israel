@@ -18,9 +18,9 @@ const Testimonials = () => {
     },
     {
       id: 2,
-      name: "Louis Macjob",
-      role: "Louis Ventures",
-      content: "The Node.js API they built for our platform is incredibly robust and scalable. Not only did they deliver clean, efficient code, but they also provided excellent documentation and ongoing support.",
+      name: "Gambus energy limited",
+      role: "Telematics Company",
+      content: "The CRM webapp built by this developer has transformed our business operations. The seamless integration of features and intuitive design has significantly improved our workflow and client management. Their expertise in web development is truly commendable.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1581091534298-04dcbce3278c?auto=format&fit=crop&w=100&h=100"
     },
