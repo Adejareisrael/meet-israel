@@ -14,7 +14,7 @@ const Testimonials = () => {
       role: "Creatives Agency",
       content: "Working with this developer was exceptional. They delivered a stunning WordPress site with custom 3D animations that perfectly captured our brand vision. The attention to detail and technical execution exceeded all expectations.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=100&h=100"
+      avatar: "https://instagram.fiba2-2.fna.fbcdn.net/v/t51.2885-19/24332315_878501555658460_4026125020697722880_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDAwLmMyIn0&_nc_ht=instagram.fiba2-2.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2gHCMPveC-hGcCSJKEAHJJDbFIj3VtMsaBGJm3Xak1cHDgtb9_mMqUw30HDFmo0jUK0&_nc_ohc=DJfIQkaGJIMQ7kNvwHOU3iA&_nc_gid=FO3NfRqbkaOgG8f-PWRK8Q&edm=APs17CUBAAAA&ccb=7-5&oh=00_AQPedZ9Tz6qwzpPeFUch8Zw-u_qFQWMjdaLHAxV70Sqstg&oe=6AC2C7B7&_nc_sid=10d13b"
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const Testimonials = () => {
       role: "Telematics Company",
       content: "The CRM webapp built by this developer has transformed our business operations. The seamless integration of features and intuitive design has significantly improved our workflow and client management. Their expertise in web development is truly commendable.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1581091534298-04dcbce3278c?auto=format&fit=crop&w=100&h=100"
+      avatar: "https://media.canva.com/v2/download/name:background_removal%23TUFIS2lFZzh1TDAjMSM2Y2FmMjhhNTNhMzRiYzBiNTFlMTQ3ZGQxNmEyZTRmMCM4NTYjI1RSQU5TRk9STUFUSU9OX1JFUVVFU1Q.png/uri:ifs%3A%2F%2FM%2Fd8b26a52-dcf8-4c25-aa87-780dc66d1866?csig=AAAAAAAAAAAAAAAAAAAAAMYLzA1HYtcZE6_dctqX26nHsUqJbMw7y1Njmq2onGZ7&exp=1779590284&signer=media-rpc&token=AAIAAU0AJGQ4YjI2YTUyLWRjZjgtNGMyNS1hYTg3LTc4MGRjNjZkMTg2NgAAAAABnlh9kJnZ3W1X56vtEI4YQy9mQRu8CdcfWn1envCOmQTX5CGCLg"
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const Testimonials = () => {
       role: "MemeFactory",
       content: "They built the entire backend infrastructure for my startup, including robust authentication systems and security protocols. Their technical expertise transformed our vision into a secure, scalable platform ready for growth.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=100&h=100"
+      avatar: "https://instagram.fiba2-2.fna.fbcdn.net/v/t51.82787-19/519680865_17846310288523549_1469000383374122924_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=YtjSgtsx894Q7kNvwHfyIvP&_nc_oc=AdpqnRlS_TM8ObpgMNAi-3E3siME960DxkjcuM3uB2cRkBKtrvASAWd1PNxiC2S5j4c&_nc_zt=24&_nc_ht=instagram.fiba2-2.fna&_nc_gid=zHO0LT8F2imwOlLLb1o8qg&_nc_ss=7baaf&oh=00_AQPx6bZlqKv6K4tbYXlJ5EcQwAAWvZoNOR0NNHg5Sq0SEw&oe=6AC29C4C"
     }
   ];
 
