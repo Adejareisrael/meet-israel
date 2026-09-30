@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Server, Globe, GitBranch, Figma } from "lucide-react";
+import { Code, Server, Globe, GitBranch, Container, Database } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
@@ -12,25 +12,28 @@ const Skills = () => {
     {
       title: "Backend Development",
       icon: Server,
-      skills: ["Node.js", "Express.js", "API Development", "Database Design", "Authentication & Security", "Server Management"]
+      skills: ["Node.js", "Express.js", "API Development", "MongoDB", "Database Design", "Authentication & Security", "Server Management", "Performance Optimization"]
     },
     {
       title: "DevOps Tools",
-      icon: Server,
-      skills: ["Vercel", "Render", "Redis", "CI/CD"]
+      icon: Container,
+      skills: ["Vercel", "Render", "Redis", "CI/CD", "Docker", "Cloud Deployment"]
     },
     {
-      title: "Design & Tools",
+      title: "Design Tools & Testing",
       icon: Globe,
-      skills: ["Figma", "UI/UX Design", "Git", "Version Control", "Project Management", "Testing"]
+      skills: ["Figma", "Postman", "Git", "Version Control", "Project Management", "Testing"]
     }
   ];
 
   const technicalSkills = [
-    { name: "Node.js", level: 90, icon: Server },
-    { name: "React", level: 85, icon: Code },
-    { name: "Git", level: 88, icon: GitBranch },
-    { name: "Figma", level: 75, icon: Figma }
+    { name: "Node.js", level: 85, label: "Advanced", icon: Server },
+    { name: "React", level: 80, label: "Proficient", icon: Code },
+    { name: "Express.js", level: 85, label: "Advanced", icon: Server },
+    { name: "MongoDB", level: 80, label: "Proficient", icon: Database },
+    { name: "Redis", level: 75, label: "Proficient", icon: Database },
+    { name: "Docker", level: 75, label: "Proficient", icon: Container },
+    { name: "Git", level: 88, label: "Advanced", icon: GitBranch }
   ];
 
   return (
@@ -95,7 +98,7 @@ const Skills = () => {
                         <skill.icon className="w-5 h-5 md:w-6 md:h-6 text-orange" />
                         <span className="font-semibold text-black text-base md:text-lg">{skill.name}</span>
                       </div>
-                      <span className="text-orange font-bold text-base md:text-lg">{skill.level}%</span>
+                      <span className="text-orange font-bold text-sm md:text-base">{skill.label}</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2 md:h-3">
                       <div
