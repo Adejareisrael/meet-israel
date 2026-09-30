@@ -102,6 +102,15 @@
     @apply px-6 md:px-12 lg:px-20 xl:px-32;
   }
 
+  .subtle-texture {
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(255, 107, 53, 0.045) 0, transparent 28%),
+      radial-gradient(circle at 85% 75%, rgba(0, 0, 0, 0.035) 0, transparent 32%),
+      linear-gradient(120deg, rgba(0, 0, 0, 0.018) 1px, transparent 1px),
+      linear-gradient(30deg, rgba(0, 0, 0, 0.014) 1px, transparent 1px);
+    background-size: auto, auto, 28px 28px, 28px 28px;
+  }
+
   .hover-scale {
     @apply transition-all duration-300 hover:scale-105;
   }

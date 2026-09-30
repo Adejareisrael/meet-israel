@@ -4,7 +4,7 @@ import { ArrowDown, Code, Zap } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-white relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-white subtle-texture relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute top-20 left-4 md:left-10 w-12 md:w-20 h-12 md:h-20 border-2 border-orange/20 rounded-full animate-pulse"></div>
       <div className="absolute bottom-32 right-4 md:right-16 w-10 md:w-16 h-10 md:h-16 bg-orange/10 rounded-lg rotate-45 animate-bounce"></div>

@@ -1,13 +1,13 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Server, Palette, Globe, GitBranch, Figma } from "lucide-react";
+import { Code, Server, Globe, GitBranch, Figma } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend Development",
       icon: Code,
-      skills: ["WordPress", "React", "HTML/CSS", "JavaScript", "Responsive Design", "UI Components"]
+      skills: ["React", "HTML/CSS", "JavaScript", "Responsive Design", "UI Components"]
     },
     {
       title: "Backend Development",
@@ -15,9 +15,9 @@ const Skills = () => {
       skills: ["Node.js", "Express.js", "API Development", "Database Design", "Authentication & Security", "Server Management"]
     },
     {
-      title: "Creative Tools",
-      icon: Palette,
-      skills: ["Blender", "3D Animation", "Visual Effects", "Motion Graphics", "Creative Design", "Asset Creation"]
+      title: "DevOps Tools",
+      icon: Server,
+      skills: ["Vercel", "Render", "Redis", "CI/CD"]
     },
     {
       title: "Design & Tools",
@@ -27,7 +27,6 @@ const Skills = () => {
   ];
 
   const technicalSkills = [
-    { name: "WordPress", level: 95, icon: Globe },
     { name: "Node.js", level: 90, icon: Server },
     { name: "React", level: 85, icon: Code },
     { name: "Blender", level: 80, icon: Palette },
@@ -36,7 +35,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 md:py-32 bg-gray-50">
+    <section id="skills" className="py-20 md:py-32 bg-gray-50 subtle-texture">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 md:mb-20">
