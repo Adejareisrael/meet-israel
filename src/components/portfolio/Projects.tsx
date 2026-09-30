@@ -14,7 +14,7 @@ const Projects = () => {
       id: 1,
       title: "Gambus Energy CRM",
       description: "Customer relationship management platform built for a telematics company to streamline client and fleet operations",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&h=400",
+      image: "/project-screenshots/gambus-energy-crm.png",
       technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
       details: "Designed and developed a full-featured CRM platform tailored for Gambus, a telematics company, enabling the team to manage client records, track interactions, and monitor fleet and sales pipelines. Built a responsive frontend with React and Tailwind CSS, backed by a Node.js/MongoDB API, with role-based access control and real-time dashboard analytics.",
       liveUrl: "https://gambus-crm.vercel.app/",
@@ -24,7 +24,7 @@ const Projects = () => {
       id: 2,
       title: "Ecobus Financial Dashboard",
       description: "Financial analytics dashboard for Ecobus providing real-time insights into revenue, expenses, and business performance",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&h=400",
+      image: "/project-screenshots/ecobus-financial-dashboard.png",
       technologies: ["React", "Tailwind CSS", "Charts", "Vite"],
       details: "Built a comprehensive financial dashboard for Ecobus, delivering real-time visibility into key financial metrics including revenue tracking, expense management, and performance analytics. Features interactive charts, filterable data tables, and a clean responsive UI designed for quick decision-making.",
       liveUrl: "https://ecobus-financial-bot.vercel.app/",
@@ -34,7 +34,7 @@ const Projects = () => {
       id: 3,
       title: "Table of Kings Catering Services",
       description: "Professional catering services website showcasing menus, events, and booking for a premium catering brand",
-      image: "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=600&h=400",
+      image: "/project-screenshots/table-of-kings.png",
       technologies: ["React", "Tailwind CSS", "Vite"],
       details: "Designed and developed a modern website for Table of Kings Catering Services, featuring an elegant layout to showcase their menu offerings, event gallery, and service packages. Built with React and Tailwind CSS for a fully responsive experience across all devices.",
       liveUrl: "https://tableof-kings-nvwi.vercel.app/",
@@ -54,7 +54,7 @@ const Projects = () => {
       id: 5,
       title: "Creative Agency Website",
       description: "Modern agency website with 3D animations and interactive elements",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&h=400",
+      image: "/project-screenshots/creative-agency.png",
       technologies: ["React", "Nodejs", "Expressjs"],
       details: "Designed and developed a stunning creative agency website using Wix with custom 3D animations created in Blender. Features include smooth scroll animations, interactive project showcases, and optimized performance across all devices.",
       liveUrl: "https://witexpress.vercel.app/",
@@ -79,7 +79,17 @@ const Projects = () => {
       details: "Created an interactive portfolio website featuring 3D animated elements, smooth transitions, and creative layouts. Designed in Figma and developed with custom WordPress themes, showcasing both technical and creative capabilities.",
       liveUrl: "#",
       githubUrl: "#"
-    }
+    },
+    {
+      id: 8,
+      title: "Gambus Energy Sim Management Portal",
+      description: "A web portal for managing SIM cards and telematics devices for a fleet management company",
+      image: "/project-screenshots/gambus-sim-portal.png",
+      technologies: ["React", "TypeScript", "Custom CSS", "Node.js", "Express.js", "MongoDB"],
+      details: "Developed a comprehensive web portal for managing SIM cards and telematics devices. The platform includes user authentication, device management, data visualization, and reporting capabilities. Built with a modern tech stack to ensure a robust and scalable solution.",
+      liveUrl: "https://simportal.gambusenergycrm.com/technician",
+      githubUrl: "https://github.com/Adejareisrael/Gambus_Sim_Portal"
+  }
   ];
 
   const scroll = (direction: 'left' | 'right') => {
