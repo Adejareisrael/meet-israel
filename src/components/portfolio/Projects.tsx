@@ -15,8 +15,8 @@ const Projects = () => {
       title: "Gambus Energy CRM",
       description: "Customer relationship management platform built for a telematics company to streamline client and fleet operations",
       image: "/project-screenshots/gambus-energy-crm.png",
-      technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-      details: "Designed and developed a full-featured CRM platform tailored for Gambus, a telematics company, enabling the team to manage client records, track interactions, and monitor fleet and sales pipelines. Built a responsive frontend with React and Tailwind CSS, backed by a Node.js/MongoDB API, with role-based access control and real-time dashboard analytics.",
+      technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+      details: "Designed and developed a full-featured CRM platform tailored for Gambus, a telematics company, enabling the team to manage client records, track interactions, and monitor fleet and sales pipelines. Built a responsive React and Tailwind CSS frontend with a Node.js and Express.js API backed by MongoDB, including role-based access control and real-time dashboard analytics.",
       liveUrl: "https://gambus-crm.vercel.app/",
       githubUrl: "#"
     },
@@ -25,8 +25,8 @@ const Projects = () => {
       title: "Ecobus Financial Dashboard",
       description: "Financial analytics dashboard for Ecobus providing real-time insights into revenue, expenses, and business performance",
       image: "/project-screenshots/ecobus-financial-dashboard.png",
-      technologies: ["React", "Tailwind CSS", "Charts", "Vite"],
-      details: "Built a comprehensive financial dashboard for Ecobus, delivering real-time visibility into key financial metrics including revenue tracking, expense management, and performance analytics. Features interactive charts, filterable data tables, and a clean responsive UI designed for quick decision-making.",
+      technologies: ["React", "TypeScript", "BigQuery", "Charts", "Vite"],
+      details: "Built a comprehensive financial dashboard for Ecobus with React and TypeScript, using BigQuery data and Vite to deliver real-time visibility into key financial metrics including revenue tracking, expense management, and performance analytics. Features interactive charts, filterable data tables, and a clean responsive UI designed for quick decision-making.",
       liveUrl: "https://ecobus-financial-bot.vercel.app/",
       githubUrl: "#"
     },
@@ -36,7 +36,7 @@ const Projects = () => {
       description: "Professional catering services website showcasing menus, events, and booking for a premium catering brand",
       image: "/project-screenshots/table-of-kings.png",
       technologies: ["React", "Tailwind CSS", "Vite"],
-      details: "Designed and developed a modern website for Table of Kings Catering Services, featuring an elegant layout to showcase their menu offerings, event gallery, and service packages. Built with React and Tailwind CSS for a fully responsive experience across all devices.",
+      details: "Designed and developed a modern website for Table of Kings Catering Services with React, Tailwind CSS, and Vite, featuring an elegant layout to showcase their menu offerings, event gallery, and service packages. Built for a fully responsive experience across all devices.",
       liveUrl: "https://tableof-kings-nvwi.vercel.app/",
       githubUrl: "#"
     },
@@ -45,8 +45,8 @@ const Projects = () => {
       title: "Personalized Content Recommendation Engine",
       description: "User engagement platform focused on personalized book recommendations and growth tracking",
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&h=400",
-      technologies: ["Machine Learning", "Node.js", "REST API"],
-      details: "Collaborated with a development team to build a user engagement platform focused on personalized book recommendations and growth tracking. Engineered the backend infrastructure to ingest and manage user data, implementing algorithmic logic to tailor content suggestions to individual user profiles. Designed scalable REST APIs and data models to support future content expansion and detailed user reporting. Translated high-level organizational goals into functional technical requirements, ensuring the final build met stakeholder expectations.",
+      technologies: ["Node.js", "REST API"],
+      details: "Collaborated with a development team to build a user engagement platform using Node.js and REST APIs, focused on personalized book recommendations and growth tracking. Engineered the backend infrastructure to ingest and manage user data, implementing algorithmic logic to tailor content suggestions to individual user profiles. Designed scalable API endpoints and data models to support future content expansion and detailed user reporting. Translated high-level organizational goals into functional technical requirements, ensuring the final build met stakeholder expectations.",
       liveUrl: "#",
       githubUrl: "https://github.com/Marvis111/rcfbackend"
     },
@@ -65,8 +65,8 @@ const Projects = () => {
       title: "Product CRUD API",
       description: "RESTful API for product management with full CRUD operations",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&h=400",
-      technologies: ["Node.js", "Express", "MongoDB", "REST API"],
-      details: "Built a robust RESTful API for complete product management, featuring Create, Read, Update, and Delete operations. Includes authentication, input validation, error handling, pagination, and comprehensive API documentation with Swagger.",
+      technologies: ["Node.js", "Express", "MongoDB", "REST API", "Swagger"],
+      details: "Built a robust Node.js and Express REST API with MongoDB for complete product management, featuring Create, Read, Update, and Delete operations. Includes authentication, input validation, error handling, pagination, and comprehensive API documentation with Swagger.",
       liveUrl: "#",
       githubUrl: "https://github.com/Adejareisrael/simple-API"
     },
@@ -75,9 +75,9 @@ const Projects = () => {
       title: "Interactive Portfolio",
       description: "Creative portfolio with 3D elements and smooth animations",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&h=400",
-      technologies: ["WordPress", "Blender", "Custom CSS", "Figma"],
+      technologies: ["React", "Typescript", "Custom CSS", "Figma"],
       details: "Created an interactive portfolio website featuring 3D animated elements, smooth transitions, and creative layouts. Designed in Figma and developed with custom WordPress themes, showcasing both technical and creative capabilities.",
-      liveUrl: "#",
+      liveUrl: "https://www.meet-israel.me/",
       githubUrl: "#"
     },
     {
@@ -86,7 +86,7 @@ const Projects = () => {
       description: "A web portal for managing SIM cards and telematics devices for a fleet management company",
       image: "/project-screenshots/gambus-sim-portal.png",
       technologies: ["React", "TypeScript", "Custom CSS", "Node.js", "Express.js", "MongoDB"],
-      details: "Developed a comprehensive web portal for managing SIM cards and telematics devices. The platform includes user authentication, device management, data visualization, and reporting capabilities. Built with a modern tech stack to ensure a robust and scalable solution.",
+      details: "Developed a comprehensive React and TypeScript web portal with custom CSS, Node.js and Express.js APIs, and MongoDB for managing SIM cards and telematics devices. The platform includes user authentication, device management, data visualization, and reporting capabilities, with a modern stack designed for a robust and scalable solution.",
       liveUrl: "https://simportal.gambusenergycrm.com/technician",
       githubUrl: "https://github.com/Adejareisrael/Gambus_Sim_Portal"
   }
@@ -103,15 +103,15 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 md:py-32 bg-white subtle-texture">
+    <section id="projects" className="py-20 md:py-32 bg-cyber subtle-texture">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 md:mb-20">
-            <h2 className="font-bold text-4xl md:text-5xl lg:text-6xl text-black mb-6">
+            <h2 className="font-bold text-4xl md:text-5xl lg:text-6xl text-cyber-text mb-6">
               Featured Projects
             </h2>
-            <div className="w-24 h-1 bg-orange mx-auto mb-8"></div>
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+            <div className="w-24 h-1 neon-underline mx-auto mb-8"></div>
+            <p className="text-lg md:text-xl text-cyber-muted max-w-2xl mx-auto">
               A showcase of my latest work in web development and creative solutions
             </p>
           </div>
@@ -121,16 +121,16 @@ const Projects = () => {
             <Button
               variant="outline"
               size="icon"
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-orange text-orange hover:bg-orange hover:text-white"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full neon-outline"
               onClick={() => scroll('left')}
             >
               <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
             </Button>
-            <span className="text-gray-500 font-medium text-sm md:text-base">Swipe or use arrows to navigate</span>
+            <span className="text-cyber-muted font-medium text-sm md:text-base">Swipe or use arrows to navigate</span>
             <Button
               variant="outline"
               size="icon"
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-orange text-orange hover:bg-orange hover:text-white"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full neon-outline"
               onClick={() => scroll('right')}
             >
               <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
@@ -146,7 +146,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <Card
                 key={project.id}
-                className="group w-[280px] sm:w-[340px] md:w-[400px] flex-shrink-0 flex flex-col bg-white shadow-xl border-0 overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-2xl"
+                className="group w-[280px] sm:w-[340px] md:w-[400px] flex-shrink-0 flex flex-col cyber-card overflow-hidden cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
                 onClick={() => setSelectedProject(project)}
               >
@@ -160,7 +160,7 @@ const Projects = () => {
                     {project.liveUrl !== "#" && (
                       <Button
                         size="sm"
-                        className="bg-orange hover:bg-orange-dark text-white text-xs md:text-sm"
+                        className="neon-outline text-xs md:text-sm"
                         onClick={(e) => {
                           e.stopPropagation();
                           window.open(project.liveUrl, '_blank');
@@ -174,7 +174,7 @@ const Projects = () => {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="border-white text-white hover:bg-white hover:text-black text-xs md:text-sm"
+                        className="border-neon text-neon hover:bg-neon hover:text-cyber text-xs md:text-sm"
                         onClick={(e) => {
                           e.stopPropagation();
                           window.open(project.githubUrl, '_blank');
@@ -188,17 +188,17 @@ const Projects = () => {
                 </div>
 
                 <CardContent className="p-5 md:p-8 flex flex-col flex-1">
-                  <h3 className="font-bold text-lg md:text-2xl text-black mb-3 md:mb-4">
+                  <h3 className="font-bold text-lg md:text-2xl text-cyber-text mb-3 md:mb-4">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
+                  <p className="text-cyber-muted mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 md:px-3 py-1 bg-orange/10 text-orange text-xs md:text-sm font-medium rounded-full"
+                        className="px-2 md:px-3 py-1 bg-neon/5 border border-neon/20 text-neon text-xs md:text-sm font-medium rounded-full"
                       >
                         {tech}
                       </span>

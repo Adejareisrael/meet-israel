@@ -34,19 +34,19 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      scrolled ? 'bg-cyber/95 backdrop-blur-md shadow-lg shadow-neon/10' : 'bg-transparent'
     }`}>
       <div className="section-padding py-4">
         <div className="flex justify-between items-center">
           <div className="font-bold text-2xl">
             <span className={`transition-colors duration-300 ${
-              scrolled ? 'text-black' : 'text-white'
+              scrolled ? 'text-cyber-text' : 'text-cyber-text'
             }`}>
               &lt;
             </span>
-            <span className="text-orange">Dev</span>
+            <span className="text-neon text-glow">Dev</span>
             <span className={`transition-colors duration-300 ${
-              scrolled ? 'text-black' : 'text-white'
+              scrolled ? 'text-cyber-text' : 'text-cyber-text'
             }`}>
               /&gt;
             </span>
@@ -58,8 +58,8 @@ const Navigation = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className={`font-medium transition-all duration-300 hover:text-orange hover:scale-105 ${
-                  scrolled ? 'text-black' : 'text-white'
+                className={`neon-outline rounded-md px-3 py-2 font-medium transition-all duration-300 hover:scale-105 ${
+                  scrolled ? 'text-cyber-text' : 'text-cyber-text'
                 }`}
               >
                 {item.label}
@@ -80,26 +80,26 @@ const Navigation = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden neon-outline"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
-              <X className={`w-6 h-6 ${scrolled ? 'text-black' : 'text-white'}`} />
+              <X className="w-6 h-6 text-cyber-text" />
             ) : (
-              <Menu className={`w-6 h-6 ${scrolled ? 'text-black' : 'text-white'}`} />
+              <Menu className="w-6 h-6 text-cyber-text" />
             )}
           </Button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-orange/20 bg-white/95 backdrop-blur-md rounded-lg">
+          <div className="md:hidden mt-4 pb-4 border-t border-neon/20 bg-elevated/95 backdrop-blur-md rounded-lg">
             <div className="flex flex-col space-y-4 pt-4 px-4">
               {navItems.map((item) => (
                 <button
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-black hover:text-orange transition-colors duration-300 text-left font-medium"
+                  className="neon-outline rounded-md px-3 py-2 transition-colors duration-300 text-left font-medium"
                 >
                   {item.label}
                 </button>

@@ -68,19 +68,19 @@ export default {
 				},
 				black: '#000000',
 				white: '#FFFFFF',
-				orange: {
-					DEFAULT: '#FF6B35',
-					light: '#FF8A5C',
-					dark: '#E55A2B'
-				},
-				'blue-accolade': {
-					DEFAULT: '#4A90E2',
-					dark: '#357ABD'
-				},
-				'blue-aerial': {
-					DEFAULT: '#7BB3F0',
-					dark: '#5A9BE8'
-				}
+				cyber: 'var(--bg)',
+				'elevated': 'var(--bg-elevated)',
+				'neon': 'rgb(var(--neon-rgb) / <alpha-value>)',
+				'neon-2': 'rgb(var(--neon-2-rgb) / <alpha-value>)',
+				'cyber-text': 'var(--text)',
+				'cyber-muted': 'var(--text-muted)',
+				orange: 'rgb(var(--neon-rgb) / <alpha-value>)',
+				'orange-light': 'rgb(var(--neon-rgb) / <alpha-value>)',
+				'orange-dark': 'rgb(var(--neon-rgb) / <alpha-value>)',
+				'blue-accolade': 'rgb(var(--neon-rgb) / <alpha-value>)',
+				'blue-accolade-dark': 'rgb(var(--neon-rgb) / <alpha-value>)',
+				'blue-aerial': 'rgb(var(--neon-2-rgb) / <alpha-value>)',
+				'blue-aerial-dark': 'rgb(var(--neon-2-rgb) / <alpha-value>)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

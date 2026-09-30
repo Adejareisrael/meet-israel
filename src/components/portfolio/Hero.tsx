@@ -4,31 +4,31 @@ import { ArrowDown, Code, Zap } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-white subtle-texture relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-cyber subtle-texture relative overflow-hidden">
       {/* Animated background elements */}
-      <div className="absolute top-20 left-4 md:left-10 w-12 md:w-20 h-12 md:h-20 border-2 border-orange/20 rounded-full animate-pulse"></div>
-      <div className="absolute bottom-32 right-4 md:right-16 w-10 md:w-16 h-10 md:h-16 bg-orange/10 rounded-lg rotate-45 animate-bounce"></div>
-      <div className="absolute top-1/3 right-4 md:right-20 w-8 md:w-12 h-8 md:h-12 border-2 border-black/10 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-20 left-4 md:left-10 w-12 md:w-20 h-12 md:h-20 border-2 border-neon/20 rounded-full animate-pulse"></div>
+      <div className="absolute bottom-32 right-4 md:right-16 w-10 md:w-16 h-10 md:h-16 bg-neon/10 rounded-lg rotate-45 animate-bounce"></div>
+      <div className="absolute top-1/3 right-4 md:right-20 w-8 md:w-12 h-8 md:h-12 border-2 border-neon-2/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
 
       <div className="section-padding w-full">
         <div className="max-w-6xl mx-auto text-center">
           <div className="animate-fade-in">
             <div className="flex justify-center items-center mb-6 flex-wrap gap-2">
-              <Code className="w-6 h-6 md:w-8 md:h-8 text-orange" />
-              <span className="text-orange font-semibold text-sm md:text-lg text-center">Software Engineer & Backend Specialist</span>
-              <Zap className="w-6 h-6 md:w-8 md:h-8 text-orange" />
+              <Code className="w-6 h-6 md:w-8 md:h-8 text-neon" />
+              <span className="text-neon font-semibold text-sm md:text-lg text-center">Software Engineer & Backend Specialist</span>
+              <Zap className="w-6 h-6 md:w-8 md:h-8 text-neon" />
             </div>
 
-            <h1 className="font-bold text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-black mb-6 md:mb-8 leading-tight">
+            <h1 className="font-bold text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-cyber-text mb-6 md:mb-8 leading-tight">
               Hi, I'm <span className="text-gradient">Israel Adejare</span>
             </h1>
 
-            <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-light text-black mb-6 md:mb-8 leading-relaxed">
+            <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-light text-cyber-text mb-6 md:mb-8 leading-relaxed">
               I Build Software Solutions <br />
-              <span className="font-semibold text-orange">That Scale</span>
+              <span className="font-semibold text-neon text-glow">That Scale</span>
             </h2>
 
-            <p className="text-base md:text-xl lg:text-2xl text-gray-600 mb-10 md:mb-12 max-w-3xl mx-auto leading-relaxed font-light px-2">
+            <p className="text-base md:text-xl lg:text-2xl text-cyber-muted mb-10 md:mb-12 max-w-3xl mx-auto leading-relaxed font-light px-2">
               Creating responsive websites, scalable APIs, and engaging digital experiences
               that combine technical excellence with creative flair.
             </p>
@@ -54,7 +54,7 @@ const Hero = () => {
           </div>
 
           <div className="absolute bottom-8 md:bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <ArrowDown className="w-6 h-6 md:w-8 md:h-8 text-orange" />
+            <ArrowDown className="w-6 h-6 md:w-8 md:h-8 text-neon" />
           </div>
         </div>
       </div>
