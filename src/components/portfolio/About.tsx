@@ -1,12 +1,12 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Code2, Server, Palette, Globe } from "lucide-react";
+import { Code2, Server, Container, Globe } from "lucide-react";
 
 const About = () => {
   const highlights = [
     { icon: Code2, text: "Full-Stack Development" },
     { icon: Server, text: "Backend & API Architecture" },
-    { icon: Palette, text: "3D Animation & Design" },
+    { icon: Container, text: "DevOps & Cloud Deployment" },
     { icon: Globe, text: "Scalable System Design" }
   ];
 
@@ -29,14 +29,14 @@ const About = () => {
               <Card className="bg-white shadow-2xl border-0 hover-scale">
                 <CardContent className="p-6 md:p-10 lg:p-12">
                   <p className="text-base md:text-xl text-gray-700 leading-relaxed mb-6 md:mb-8 font-light">
-                    I'm a <span className="font-semibold text-orange">Software Engineer</span> passionate about building robust, scalable systems and
+                    I'm a <span className="font-semibold text-orange">Software Engineer</span> focused on building robust, scalable systems and
                     crafting clean, maintainable code. I specialize in <span className="font-semibold text-orange">backend development</span> with
-                    <span className="font-semibold"> Node.js</span>, designing efficient APIs and architecting solutions that grow with business needs.
+                    <span className="font-semibold"> Node.js and Express.js</span>, designing efficient APIs and architecting solutions that grow with business needs.
                   </p>
                   <p className="text-base md:text-xl text-gray-700 leading-relaxed mb-8 md:mb-10 font-light">
-                    Beyond engineering, I bring creativity through <span className="font-semibold text-orange">3D animations with Blender</span> and
-                    have a keen eye for <span className="font-semibold">user experience</span>.
-                    I believe great software balances technical excellence with intuitive design.
+                    I work across the stack with <span className="font-semibold text-orange">React, MongoDB, and Redis</span>, and use
+                    <span className="font-semibold"> Docker, Git, and CI/CD</span> to build, test, and deploy reliable applications.
+                    I believe great software combines technical excellence with clear, intuitive user experiences.
                   </p>
 
                   <div className="grid grid-cols-2 gap-3">
