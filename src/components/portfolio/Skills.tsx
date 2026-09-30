@@ -29,7 +29,6 @@ const Skills = () => {
   const technicalSkills = [
     { name: "Node.js", level: 90, icon: Server },
     { name: "React", level: 85, icon: Code },
-    { name: "Blender", level: 80, icon: Palette },
     { name: "Git", level: 88, icon: GitBranch },
     { name: "Figma", level: 75, icon: Figma }
   ];
