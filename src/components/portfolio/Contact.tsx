@@ -212,7 +212,7 @@ const Contact = () => {
                   <p className="mb-5 md:mb-6 text-base md:text-lg">
                     Download my resume to learn more about my experience and skills.
                   </p>
-                  <a href="/My_resume.pdf" download>
+                  <a href="/Olaosebikan_Israel_Resume.pdf" download>
                     <Button
                       size="lg"
                       className="bg-white text-orange hover:bg-gray-100 font-bold text-base md:text-lg px-6 md:px-8 py-3"
