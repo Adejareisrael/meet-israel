@@ -12,7 +12,7 @@ const Skills = () => {
     {
       title: "Backend Development",
       icon: Server,
-      skills: ["Node.js", "Express.js", "API Development", "MongoDB", "Database Design", "Authentication & Security", "Server Management", "Performance Optimization"]
+      skills: ["Node.js","TypeScript", "Express.js", "API Development", "MongoDB", "Database Design", "Authentication & Security", "Server Management", "Performance Optimization"]
     },
     {
       title: "DevOps Tools",
