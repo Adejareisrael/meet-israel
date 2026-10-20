@@ -22,7 +22,7 @@ const Skills = () => {
     {
       title: "Design Tools & Testing",
       icon: Globe,
-      skills: ["Figma", "Postman", "Git", "Version Control", "Project Management", "Testing"]
+      skills: ["Figma", "Postman", "Version Control with Git", "Project Management", "Testing"]
     }
   ];
 
