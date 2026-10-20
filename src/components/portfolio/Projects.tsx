@@ -103,15 +103,15 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-20 md:py-32 bg-cyber subtle-texture">
+    <section id="projects" className="py-20 md:py-32 bg-white subtle-texture">
       <div className="section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 md:mb-20">
-            <h2 className="font-bold text-4xl md:text-5xl lg:text-6xl text-cyber-text mb-6">
+            <h2 className="font-bold text-4xl md:text-5xl lg:text-6xl text-black mb-6">
               Featured Projects
             </h2>
-            <div className="w-24 h-1 neon-underline mx-auto mb-8"></div>
-            <p className="text-lg md:text-xl text-cyber-muted max-w-2xl mx-auto">
+            <div className="w-24 h-1 bg-orange mx-auto mb-8"></div>
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
               A showcase of my latest work in web development and creative solutions
             </p>
           </div>
@@ -121,16 +121,16 @@ const Projects = () => {
             <Button
               variant="outline"
               size="icon"
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full neon-outline"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-orange text-orange hover:bg-orange hover:text-white"
               onClick={() => scroll('left')}
             >
               <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
             </Button>
-            <span className="text-cyber-muted font-medium text-sm md:text-base">Swipe or use arrows to navigate</span>
+            <span className="text-gray-500 font-medium text-sm md:text-base">Swipe or use arrows to navigate</span>
             <Button
               variant="outline"
               size="icon"
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full neon-outline"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-orange text-orange hover:bg-orange hover:text-white"
               onClick={() => scroll('right')}
             >
               <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
@@ -146,7 +146,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <Card
                 key={project.id}
-                className="group w-[280px] sm:w-[340px] md:w-[400px] flex-shrink-0 flex flex-col cyber-card overflow-hidden cursor-pointer"
+                className="group w-[280px] sm:w-[340px] md:w-[400px] flex-shrink-0 flex flex-col bg-white shadow-xl border-0 overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-2xl"
                 style={{ animationDelay: `${index * 0.1}s` }}
                 onClick={() => setSelectedProject(project)}
               >
@@ -160,7 +160,7 @@ const Projects = () => {
                     {project.liveUrl !== "#" && (
                       <Button
                         size="sm"
-                        className="neon-outline text-xs md:text-sm"
+                        className="bg-orange hover:bg-orange-dark text-white text-xs md:text-sm"
                         onClick={(e) => {
                           e.stopPropagation();
                           window.open(project.liveUrl, '_blank');
@@ -174,7 +174,7 @@ const Projects = () => {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="border-neon text-neon hover:bg-neon hover:text-cyber text-xs md:text-sm"
+                        className="border-white text-white hover:bg-white hover:text-black text-xs md:text-sm"
                         onClick={(e) => {
                           e.stopPropagation();
                           window.open(project.githubUrl, '_blank');
@@ -188,17 +188,17 @@ const Projects = () => {
                 </div>
 
                 <CardContent className="p-5 md:p-8 flex flex-col flex-1">
-                  <h3 className="font-bold text-lg md:text-2xl text-cyber-text mb-3 md:mb-4">
+                  <h3 className="font-bold text-lg md:text-2xl text-black mb-3 md:mb-4">
                     {project.title}
                   </h3>
-                  <p className="text-cyber-muted mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
+                  <p className="text-gray-600 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 md:px-3 py-1 bg-neon/5 border border-neon/20 text-neon text-xs md:text-sm font-medium rounded-full"
+                        className="px-2 md:px-3 py-1 bg-orange/10 text-orange text-xs md:text-sm font-medium rounded-full"
                       >
                         {tech}
                       </span>
