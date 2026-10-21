@@ -88,7 +88,7 @@ const Projects = () => {
       technologies: ["TypeScript", "Node.js", "Express.js", "MongoDB", "State Machines", "OpenAPI", "Lovable (frontend)"],
       details: "Built the TypeScript backend that tracks 500+ SIMs and handles SIM requests, modelling the SIM lifecycle as a state machine so a SIM can only move between valid states. Designed a two-factor handover for replacements: a replacement is only issued once the damaged SIM is physically returned, confirmed by a passcode that automatically records receipt. Added strict RBAC for 10 users, a lost/stolen flow and an admin override with mandatory audit logging. The React frontend started from a Lovable AI-generated base, which I analysed and customised to fix workflow deviations, role-gating and UI issues. The API is documented with OpenAPI, covered by unit and integration tests, and deployed through GitHub Actions CI/CD.",
       liveUrl: "https://simportal.gambusenergycrm.com/technician",
-      githubUrl: "https://github.com/Adejareisrael/Gambus_Sim_Portal"
+      githubUrl: "#"
   }
   ];
 
