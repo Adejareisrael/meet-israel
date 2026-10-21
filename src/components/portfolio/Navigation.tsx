@@ -39,15 +39,11 @@ const Navigation = () => {
       <div className="section-padding py-4">
         <div className="flex justify-between items-center">
           <div className="font-bold text-2xl">
-            <span className={`transition-colors duration-300 ${
-              scrolled ? 'text-black' : 'text-white'
-            }`}>
+            <span className="text-black">
               &lt;
             </span>
             <span className="text-orange">Dev</span>
-            <span className={`transition-colors duration-300 ${
-              scrolled ? 'text-black' : 'text-white'
-            }`}>
+            <span className="text-black">
               /&gt;
             </span>
           </div>
@@ -58,9 +54,7 @@ const Navigation = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className={`font-medium transition-all duration-300 hover:text-orange hover:scale-105 ${
-                  scrolled ? 'text-black' : 'text-white'
-                }`}
+                className="font-medium text-black transition-all duration-300 hover:text-orange hover:scale-105"
               >
                 {item.label}
               </button>
@@ -84,9 +78,9 @@ const Navigation = () => {
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
-              <X className={`w-6 h-6 ${scrolled ? 'text-black' : 'text-white'}`} />
+              <X className="w-6 h-6 text-black" />
             ) : (
-              <Menu className={`w-6 h-6 ${scrolled ? 'text-black' : 'text-white'}`} />
+              <Menu className="w-6 h-6 text-black" />
             )}
           </Button>
         </div>

@@ -10,6 +10,12 @@ const About = () => {
     { icon: Sparkles, text: "AI-Assisted Frontend" }
   ];
 
+  const experience = [
+    { role: "Backend Engineer", company: "Gambus Energy Limited", dates: "Mar 2026 – Present" },
+    { role: "Full-Stack Engineer", company: "Ecobus Transport Limited", dates: "Freelance" },
+    { role: "Technical Consultant", company: "WitExpress", dates: "Oct – Dec 2025" }
+  ];
+
   return (
     <section id="about" className="py-20 md:py-32 bg-gray-50 subtle-texture">
       <div className="section-padding">
@@ -52,7 +58,7 @@ const About = () => {
               </Card>
             </div>
 
-            <div className="order-1 lg:order-2 flex justify-center animate-slide-in-right">
+            <div className="order-1 lg:order-2 flex flex-col items-center gap-12 md:gap-14 animate-slide-in-right">
               <div className="relative">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-orange">
                   <img
@@ -63,6 +69,21 @@ const About = () => {
                 </div>
                 <div className="absolute -top-4 -right-4 md:-top-6 md:-right-6 w-16 h-16 md:w-24 md:h-24 bg-orange rounded-full animate-pulse"></div>
                 <div className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 w-10 h-10 md:w-16 md:h-16 border-4 border-black rounded-full animate-bounce"></div>
+              </div>
+
+              <div className="w-64 sm:w-80 md:w-96 bg-white/80 border border-gray-200 rounded-xl px-4 py-3 md:px-5 md:py-4">
+                <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2">Experience</p>
+                <ul className="space-y-2">
+                  {experience.map((item) => (
+                    <li key={item.role} className="flex items-start justify-between gap-3 text-xs md:text-sm">
+                      <div>
+                        <p className="font-semibold text-black">{item.role}</p>
+                        <p className="text-gray-500">{item.company}</p>
+                      </div>
+                      <span className="text-gray-400 whitespace-nowrap">{item.dates}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>

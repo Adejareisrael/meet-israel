@@ -12,7 +12,7 @@ const Testimonials = () => {
       id: 1,
       name: "WitExpress",
       role: "Creatives Agency",
-      content: "Working with this developer was exceptional. They delivered a stunning WordPress site with custom 3D animations that perfectly captured our brand vision. The attention to detail and technical execution exceeded all expectations.",
+      content: "Working with this developer was exceptional. They delivered a stunning Lovable site with custom 3D animations that perfectly captured our brand vision. The attention to detail and technical execution exceeded all expectations.",
       rating: 5,
       initials: "WE"
     },
@@ -23,14 +23,6 @@ const Testimonials = () => {
       content: "The CRM webapp built by this developer has transformed our business operations. The seamless integration of features and intuitive design has significantly improved our workflow and client management. Their expertise in web development is truly commendable.",
       rating: 5,
       initials: "GE"
-    },
-    {
-      id: 3,
-      name: "Gbenga Adeyemi",
-      role: "MemeFactory",
-      content: "They built the entire backend infrastructure for my startup, including robust authentication systems and security protocols. Their technical expertise transformed our vision into a secure, scalable platform ready for growth.",
-      rating: 5,
-      initials: "GA"
     }
   ];
 

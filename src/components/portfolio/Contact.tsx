@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Mail, Send, MessageCircle, Phone } from "lucide-react";
+import { Mail, Send, MessageCircle, Phone, Github } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -144,8 +144,8 @@ const Contact = () => {
                   </h3>
                   <p className="text-gray-700 leading-relaxed mb-6 md:mb-8 text-base md:text-lg">
                     I'm always excited to work on new projects and collaborate with amazing people.
-                    Whether you need a responsive website, scalable backend, or creative 3D animations,
-                    let's bring your ideas to life!
+                    Whether you need a scalable backend, a well-architected system, or a full product with
+                    an AI-built frontend wired to a solid backend, let's bring your ideas to life!
                   </p>
 
                   <div className="space-y-4">
@@ -172,6 +172,20 @@ const Contact = () => {
                         <p className="text-gray-600 text-sm md:text-base">08161396891</p>
                       </div>
                     </a>
+                    <a
+                      href="https://github.com/Adejareisrael"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-4 hover:bg-orange/5 rounded-lg p-2 -ml-2 transition-colors"
+                    >
+                      <div className="w-10 h-10 md:w-12 md:h-12 bg-black/5 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Github className="w-5 h-5 md:w-6 md:h-6 text-black" />
+                      </div>
+                      <div>
+                        <p className="text-black font-medium text-sm md:text-base">GitHub</p>
+                        <p className="text-gray-600 text-sm md:text-base">github.com/Adejareisrael</p>
+                      </div>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
@@ -190,6 +204,15 @@ const Contact = () => {
                         className="w-12 h-12 md:w-14 md:h-14 border-2 border-orange text-orange hover:bg-orange hover:text-white transition-all duration-300"
                       >
                         <MessageCircle className="w-6 h-6 md:w-7 md:h-7" />
+                      </Button>
+                    </a>
+                    <a href="https://github.com/Adejareisrael" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                      <Button
+                        variant="outline"
+                        size="icon"
+                        className="w-12 h-12 md:w-14 md:h-14 border-2 border-orange text-orange hover:bg-orange hover:text-white transition-all duration-300"
+                      >
+                        <Github className="w-6 h-6 md:w-7 md:h-7" />
                       </Button>
                     </a>
                     <a href="mailto:theizzylogic@gmail.com">
@@ -232,7 +255,7 @@ const Contact = () => {
         <div className="section-padding">
           <div className="text-center">
             <p className="text-gray-600 text-base md:text-lg">
-              © 2024 Olaosebikan Israel. Crafted with creativity, built with passion. ⚡
+              © 2026 Olaosebikan Israel. Crafted with creativity, built with passion. ⚡
             </p>
           </div>
         </div>

@@ -24,10 +24,10 @@ const Projects = () => {
       id: 2,
       title: "Ecobus Data Centre",
       description: "Unified data centre for 4 departments at Ecobus Transport, replacing spreadsheet and WhatsApp-based reporting",
-      image: "/project-screenshots/ecobus-financial-dashboard.png",
-      technologies: ["TypeScript", "Node.js", "Express.js", "PostgreSQL", "Redis", "Docker", "Lovable (frontend)"],
-      details: "Designed and built a unified data centre for Ecobus Transport's Financials, Operations, Management and Administration departments, cutting daily reporting turnaround by an average of 7 hours. The backend automates daily reports from 10 terminals with profit/loss calculated per terminal and company-wide, runs payroll and staff records for 100+ staff, tracks 71 vehicles through a repair approval workflow, and blocks duplicate repair requests. PostgreSQL is partitioned to keep queries lean as the system scales, alerts run as background jobs on Redis, and the database is backed up to both Cloudflare R2 and Backblaze. Access is enforced with RBAC, JWT, OAuth 2.0 and bcrypt. The React frontend was generated with Lovable and customised by me, and the whole system deploys with Docker, Nginx and PM2 through GitHub Actions CI/CD.",
-      liveUrl: "https://ecobus-financial-bot.vercel.app/",
+      image: "/project-screenshots/ecobus-data-centre.png",
+      technologies: ["TypeScript", "Node.js", "PostgreSQL", "Redis", "Docker", "GitHub Actions", "Render", "Lovable (frontend)"],
+      details: "Designed and built a unified data centre in TypeScript (Node.js, Express) and PostgreSQL for Ecobus Transport's Financials, Operations, Management and Administration departments, replacing spreadsheet and WhatsApp-based reporting and cutting daily reporting turnaround by an average of 7 hours. The backend automates daily reports from 10 terminals with profit/loss calculated per terminal and company-wide, runs payroll and staff records for 100+ staff, tracks 71 vehicles through a repair approval workflow, and blocks duplicate repair requests. PostgreSQL is partitioned to keep queries lean as the system scales, alerts run as background jobs on Redis, and the main database is backed up to both Cloudflare and Backblaze buckets, giving two independent off-site copies. Access is enforced with RBAC, JWT, OAuth 2.0 and bcrypt. The React frontend was generated with Lovable and customised by me, and the system deploys with Docker, Nginx and PM2 through GitHub Actions CI/CD on Vercel and Render, with UptimeRobot keeping the Render server responsive.",
+      liveUrl: "https://datacentre.ecobusoperations.com/",
       githubUrl: "#"
     },
     {
@@ -55,8 +55,8 @@ const Projects = () => {
       title: "WitExpress Creative Agency",
       description: "Official agency website and backend systems for managing clients, projects and creative strategies",
       image: "/project-screenshots/creative-agency.png",
-      technologies: ["React", "Node.js", "Express.js", "SQL"],
-      details: "As Technical Consultant for WitExpress, I designed a centralized database to manage an average of 200 clients, projects and creative strategies, with schema design and validation to keep the data accurate. Built backend services to track client engagement, campaign strategies and execution history, and optimized SQL queries to cut API response time by 40% on high-volume endpoints. Also designed and developed the agency's official website with responsive interfaces and backend logic for dynamic content and service listings.",
+      technologies: ["Lovable (frontend)", "3D Animations", "Node.js", "Express.js", "SQL"],
+      details: "As Technical Consultant for WitExpress, I designed a centralized database to manage an average of 200 clients, projects and creative strategies, with schema design and validation to keep the data accurate. Built backend services to track client engagement, campaign strategies and execution history, and optimized SQL queries to cut API response time by 40% on high-volume endpoints. Also built the agency's official website with Lovable, featuring custom 3D animations, responsive interfaces and backend logic for dynamic content and service listings.",
       liveUrl: "https://witexpress.vercel.app/",
       githubUrl: "#"
     },

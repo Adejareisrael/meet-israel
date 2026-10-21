@@ -7,7 +7,7 @@ const Skills = () => {
     {
       title: "Backend Development",
       icon: Server,
-      skills: ["Node.js", "TypeScript", "Express.js", "PostgreSQL", "MongoDB & Mongoose", "Redis", "REST APIs & OpenAPI", "JWT, OAuth 2.0 & bcrypt", "Unit & Integration Testing"]
+      skills: ["JavaScript (ES6+)", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "MongoDB & Mongoose", "Redis", "REST APIs & OpenAPI", "JWT, OAuth 2.0 & bcrypt", "Unit & Integration Testing"]
     },
     {
       title: "System Architecture",
