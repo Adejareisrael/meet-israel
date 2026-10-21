@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="animate-fade-in">
             <div className="flex justify-center items-center mb-6 flex-wrap gap-2">
               <Code className="w-6 h-6 md:w-8 md:h-8 text-orange" />
-              <span className="text-orange font-semibold text-sm md:text-lg text-center">Software Engineer & Backend Specialist</span>
+              <span className="text-orange font-semibold text-sm md:text-lg text-center">Backend Engineer & System Architect</span>
               <Zap className="w-6 h-6 md:w-8 md:h-8 text-orange" />
             </div>
 
@@ -24,13 +24,13 @@ const Hero = () => {
             </h1>
 
             <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-light text-black mb-6 md:mb-8 leading-relaxed">
-              I Build Software Solutions <br />
+              I Architect Backends & Systems <br />
               <span className="font-semibold text-orange">That Scale</span>
             </h2>
 
             <p className="text-base md:text-xl lg:text-2xl text-gray-600 mb-10 md:mb-12 max-w-3xl mx-auto leading-relaxed font-light px-2">
-              Creating responsive websites, scalable APIs, and engaging digital experiences
-              that combine technical excellence with creative flair.
+              I design the architecture and build the backend myself: APIs, databases, auth and infrastructure.
+              Frontends move fast with AI tools like Lovable and Claude, which I then analyse and wire into the systems I build.
             </p>
           </div>
 

@@ -1,39 +1,40 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code, Server, Globe, GitBranch, Container, Database } from "lucide-react";
+import { Code, Server, Network, GitBranch, Container, Database, Sparkles } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
-      icon: Code,
-      skills: ["React", "HTML/CSS", "JavaScript", "Responsive Design", "UI Components"]
-    },
-    {
       title: "Backend Development",
       icon: Server,
-      skills: ["Node.js","TypeScript", "Express.js", "API Development", "MongoDB", "Database Design", "Authentication & Security", "Server Management", "Performance Optimization"]
+      skills: ["Node.js", "TypeScript", "Express.js", "PostgreSQL", "MongoDB & Mongoose", "Redis", "REST APIs & OpenAPI", "JWT, OAuth 2.0 & bcrypt", "Unit & Integration Testing"]
     },
     {
-      title: "DevOps Tools",
+      title: "System Architecture",
+      icon: Network,
+      skills: ["System Design", "RBAC", "State Machines", "Audit Trails", "Database Partitioning", "Background Jobs", "Backups & Reliability"]
+    },
+    {
+      title: "DevOps & Cloud",
       icon: Container,
-      skills: ["Vercel", "Render", "Redis", "CI/CD", "Docker", "Cloud Deployment"]
+      skills: ["Docker", "Nginx", "PM2", "GitHub Actions CI/CD", "Vercel & Render", "Cloudflare R2 & Backblaze", "UptimeRobot", "Git & Postman"]
     },
     {
-      title: "Design Tools & Testing",
-      icon: Globe,
-      skills: ["Figma", "Postman", "Version Control with Git", "Unit Testing", "Integration Testing"]
+      title: "AI-Assisted Frontend",
+      icon: Sparkles,
+      skills: ["Lovable", "Claude", "React", "Codebase Analysis", "Frontend Customisation", "Backend Integration"]
     }
   ];
 
   const technicalSkills = [
-    { name: "Node.js", level: 85, label: "Advanced", icon: Server },
-    { name: "React", level: 80, label: "Proficient", icon: Code },
-    { name: "Express.js", level: 85, label: "Advanced", icon: Server },
-    { name: "MongoDB", level: 80, label: "Proficient", icon: Database },
+    { name: "Node.js", level: 88, label: "Advanced", icon: Server },
+    { name: "TypeScript", level: 82, label: "Proficient", icon: Code },
+    { name: "Express.js", level: 88, label: "Advanced", icon: Server },
+    { name: "PostgreSQL", level: 78, label: "Proficient", icon: Database },
+    { name: "MongoDB", level: 85, label: "Advanced", icon: Database },
     { name: "Redis", level: 75, label: "Proficient", icon: Database },
-    { name: "Docker", level: 75, label: "Proficient", icon: Container },
-    { name: "Git", level: 88, label: "Advanced", icon: GitBranch }
+    { name: "Docker & CI/CD", level: 78, label: "Proficient", icon: GitBranch },
+    { name: "AI Tools (Lovable & Claude)", level: 90, label: "Advanced", icon: Sparkles }
   ];
 
   return (
@@ -46,7 +47,7 @@ const Skills = () => {
             </h2>
             <div className="w-24 h-1 bg-orange mx-auto mb-8"></div>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-              Technical expertise and creative tools that bring ideas to life
+              Backend and architecture first, with AI tools speeding up the frontend
             </p>
           </div>
 

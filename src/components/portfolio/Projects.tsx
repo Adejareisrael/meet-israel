@@ -13,20 +13,20 @@ const Projects = () => {
     {
       id: 1,
       title: "Gambus Energy CRM",
-      description: "Customer relationship management platform built for a telematics company to streamline client and fleet operations",
+      description: "Combined CRM and ticketing platform for a telematics company, used by 50+ people and processing 100+ tickets per week",
       image: "/project-screenshots/gambus-energy-crm.png",
-      technologies: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-      details: "Designed and developed a full-featured CRM platform tailored for Gambus, a telematics company, enabling the team to manage client records, track interactions, and monitor fleet and sales pipelines. Built a responsive React and Tailwind CSS frontend with a Node.js and Express.js API backed by MongoDB, including role-based access control and real-time dashboard analytics.",
+      technologies: ["TypeScript", "Node.js", "Express.js", "MongoDB", "JWT", "RBAC", "React (AI-generated)"],
+      details: "Built the TypeScript (Node.js, Express) and MongoDB backend for a combined CRM and ticketing platform used by 50+ people at Gambus Energy, processing 100+ tickets per week and linking each ticket to its customer record. Enforced SLA deadlines on the server with overdue detection and escalation, and modelled the ticket lifecycle with state rules that reject invalid status changes. Secured it with JWT authentication, bcrypt password hashing and role-based access control, with every ticket and customer change recorded in an append-only audit trail. The React frontend was generated with AI tools; I analysed the codebase and connected it to the backend I designed and built.",
       liveUrl: "https://gambus-crm.vercel.app/",
       githubUrl: "#"
     },
     {
       id: 2,
-      title: "Ecobus Financial Dashboard",
-      description: "Financial analytics dashboard for Ecobus providing real-time insights into revenue, expenses, and business performance",
+      title: "Ecobus Data Centre",
+      description: "Unified data centre for 4 departments at Ecobus Transport, replacing spreadsheet and WhatsApp-based reporting",
       image: "/project-screenshots/ecobus-financial-dashboard.png",
-      technologies: ["React", "TypeScript", "BigQuery", "Charts", "Vite"],
-      details: "Built a comprehensive financial dashboard for Ecobus with React and TypeScript, using BigQuery data and Vite to deliver real-time visibility into key financial metrics including revenue tracking, expense management, and performance analytics. Features interactive charts, filterable data tables, and a clean responsive UI designed for quick decision-making.",
+      technologies: ["TypeScript", "Node.js", "Express.js", "PostgreSQL", "Redis", "Docker", "Lovable (frontend)"],
+      details: "Designed and built a unified data centre for Ecobus Transport's Financials, Operations, Management and Administration departments, cutting daily reporting turnaround by an average of 7 hours. The backend automates daily reports from 10 terminals with profit/loss calculated per terminal and company-wide, runs payroll and staff records for 100+ staff, tracks 71 vehicles through a repair approval workflow, and blocks duplicate repair requests. PostgreSQL is partitioned to keep queries lean as the system scales, alerts run as background jobs on Redis, and the database is backed up to both Cloudflare R2 and Backblaze. Access is enforced with RBAC, JWT, OAuth 2.0 and bcrypt. The React frontend was generated with Lovable and customised by me, and the whole system deploys with Docker, Nginx and PM2 through GitHub Actions CI/CD.",
       liveUrl: "https://ecobus-financial-bot.vercel.app/",
       githubUrl: "#"
     },
@@ -52,11 +52,11 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "Creative Agency Website",
-      description: "Modern agency website with 3D animations and interactive elements",
+      title: "WitExpress Creative Agency",
+      description: "Official agency website and backend systems for managing clients, projects and creative strategies",
       image: "/project-screenshots/creative-agency.png",
-      technologies: ["React", "Nodejs", "Expressjs"],
-      details: "Designed and developed a stunning creative agency website using Wix with custom 3D animations created in Blender. Features include smooth scroll animations, interactive project showcases, and optimized performance across all devices.",
+      technologies: ["React", "Node.js", "Express.js", "SQL"],
+      details: "As Technical Consultant for WitExpress, I designed a centralized database to manage an average of 200 clients, projects and creative strategies, with schema design and validation to keep the data accurate. Built backend services to track client engagement, campaign strategies and execution history, and optimized SQL queries to cut API response time by 40% on high-volume endpoints. Also designed and developed the agency's official website with responsive interfaces and backend logic for dynamic content and service listings.",
       liveUrl: "https://witexpress.vercel.app/",
       githubUrl: "#"
     },
@@ -73,20 +73,20 @@ const Projects = () => {
     {
       id: 7,
       title: "Interactive Portfolio",
-      description: "Creative portfolio with 3D elements and smooth animations",
+      description: "This portfolio, built with AI tools and refined by hand",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&h=400",
-      technologies: ["React", "Typescript", "Custom CSS", "Figma"],
-      details: "Created an interactive portfolio website featuring 3D animated elements, smooth transitions, and creative layouts. Designed in Figma and developed with custom WordPress themes, showcasing both technical and creative capabilities.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Lovable", "Claude"],
+      details: "The site you're on. I generated the React and TypeScript frontend with Lovable, then used Claude to analyse and refine the codebase: restyling, restructuring content and keeping projects and skills up to date. It's a small example of how I work: AI tools for a fast, polished frontend, so my own engineering time goes into backends and system architecture.",
       liveUrl: "https://www.meet-israel.me/",
       githubUrl: "#"
     },
     {
       id: 8,
       title: "Gambus Energy Sim Management Portal",
-      description: "A web portal for managing SIM cards and telematics devices for a fleet management company",
+      description: "SIM stock inventory and request system tracking 500+ SIMs for a telematics company",
       image: "/project-screenshots/gambus-sim-portal.png",
-      technologies: ["React", "TypeScript", "Custom CSS", "Node.js", "Express.js", "MongoDB"],
-      details: "Developed a comprehensive React and TypeScript web portal with custom CSS, Node.js and Express.js APIs, and MongoDB for managing SIM cards and telematics devices. The platform includes user authentication, device management, data visualization, and reporting capabilities, with a modern stack designed for a robust and scalable solution.",
+      technologies: ["TypeScript", "Node.js", "Express.js", "MongoDB", "State Machines", "OpenAPI", "Lovable (frontend)"],
+      details: "Built the TypeScript backend that tracks 500+ SIMs and handles SIM requests, modelling the SIM lifecycle as a state machine so a SIM can only move between valid states. Designed a two-factor handover for replacements: a replacement is only issued once the damaged SIM is physically returned, confirmed by a passcode that automatically records receipt. Added strict RBAC for 10 users, a lost/stolen flow and an admin override with mandatory audit logging. The React frontend started from a Lovable AI-generated base, which I analysed and customised to fix workflow deviations, role-gating and UI issues. The API is documented with OpenAPI, covered by unit and integration tests, and deployed through GitHub Actions CI/CD.",
       liveUrl: "https://simportal.gambusenergycrm.com/technician",
       githubUrl: "https://github.com/Adejareisrael/Gambus_Sim_Portal"
   }

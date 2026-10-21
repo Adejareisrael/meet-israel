@@ -1,13 +1,13 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Code2, Server, Container, Globe } from "lucide-react";
+import { Sparkles, Server, Container, Network } from "lucide-react";
 
 const About = () => {
   const highlights = [
-    { icon: Code2, text: "Full-Stack Development" },
-    { icon: Server, text: "Backend & API Architecture" },
-    { icon: Container, text: "DevOps & Cloud Deployment" },
-    { icon: Globe, text: "Scalable System Design" }
+    { icon: Server, text: "Backend Engineering" },
+    { icon: Network, text: "System Architecture" },
+    { icon: Container, text: "DevOps & CI/CD" },
+    { icon: Sparkles, text: "AI-Assisted Frontend" }
   ];
 
   return (
@@ -20,7 +20,7 @@ const About = () => {
             </h2>
             <div className="w-24 h-1 bg-orange mx-auto mb-8"></div>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-              Passionate engineer building scalable solutions
+              Backend engineer and system architect
             </p>
           </div>
 
@@ -29,14 +29,15 @@ const About = () => {
               <Card className="bg-white shadow-2xl border-0 hover-scale">
                 <CardContent className="p-6 md:p-10 lg:p-12">
                   <p className="text-base md:text-xl text-gray-700 leading-relaxed mb-6 md:mb-8 font-light">
-                    I'm a <span className="font-semibold text-orange">Software Engineer</span> focused on building robust, scalable systems and
-                    crafting clean, maintainable code. I specialize in <span className="font-semibold text-orange">backend development</span> with
-                    <span className="font-semibold"> Node.js and Express.js</span>, designing efficient APIs and architecting solutions that grow with business needs.
+                    I'm a <span className="font-semibold text-orange">Backend Engineer</span> who majors in
+                    <span className="font-semibold text-orange"> backend development and system architecture</span>. I build with
+                    <span className="font-semibold"> TypeScript, Node.js and Express.js</span> on PostgreSQL, MongoDB and Redis, designing
+                    RBAC, state machines, audit trails and background jobs, and shipping with Docker, Nginx and GitHub Actions CI/CD.
                   </p>
                   <p className="text-base md:text-xl text-gray-700 leading-relaxed mb-8 md:mb-10 font-light">
-                    I work across the stack with <span className="font-semibold text-orange">React, MongoDB, and Redis</span>, and use
-                    <span className="font-semibold"> Docker, Git, and CI/CD</span> to build, test, and deploy reliable applications.
-                    I believe great software combines technical excellence with clear, intuitive user experiences.
+                    For the frontend, I'm highly proficient with <span className="font-semibold text-orange">AI tools like Lovable and Claude</span>.
+                    I use them to generate the frontend, then <span className="font-semibold">analyse the codebase</span>, fix workflow and role-gating
+                    issues, and build the backend that powers it myself. That lets me spend my time where it matters most: the systems underneath.
                   </p>
 
                   <div className="grid grid-cols-2 gap-3">
